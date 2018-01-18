@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Symfony Standard Edition
 ========================
 
@@ -70,3 +71,6 @@ Enjoy!
 [11]: https://symfony.com/doc/3.4/logging.html
 [13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
 [14]: https://symfony.com/doc/current/setup/built_in_web_server.html
+=======
+# EscapismEncoreTest4
+>>>>>>> e308bacef653c15da26eb48fbc5858123e22834c
