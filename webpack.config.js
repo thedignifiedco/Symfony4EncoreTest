@@ -9,15 +9,15 @@ Encore
     .setPublicPath('/build')
 
     // will create web/build/app.js and web/build/app.css
-    .addEntry('app', './web/js/index.js')
+    .addEntry('app', './app/Resources/public/js/index.js')
 
     // will output as web/build/global.css
     .addStyleEntry('global', [
-        './web/css/index.css',
-        './web/css/brands.css',
-        './web/css/contact.css',
-        './web/css/forms.css',
-        './web/css/about.css'
+        './app/Resources/public/css/index.css',
+        './app/Resources/public/css/brands.css',
+        './app/Resources/public/css/contact.css',
+        './app/Resources/public/css/forms.css',
+        './app/Resources/public/css/about.css'
     ])
 
     // allow legacy applications to use $/jQuery as a global variable
