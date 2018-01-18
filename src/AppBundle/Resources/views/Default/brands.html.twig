@@ -1,0 +1,68 @@
+{% extends "@App/Default/base.html.twig" %}
+
+{% block additionalcss %}
+    <link href="/build/global.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block body %}
+    <div id="content" class="site-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="single-image-wrapper">
+                        <div class="placeholder"><h1>BRANDS</h1></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="brands" class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="magazine-cover" id="squaremile">
+                                <img src="{{ asset('/images/squaremile-cover.jpeg') }}" alt="" width="600" height="799" class="aligncenter" />
+                                <div class="cover-overlay">
+                                    <h3>Square Mile</h3>
+                                    <p>The City's number one monthly magazine, covering everything from style, luxury and investments. Square Mile is London's only luxury lifestyle magazine worth reading.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="magazine-cover" id="hedge">
+                                <img src="{{ asset('/images/hedge-cover.jpeg') }}" alt="" width="600" height="799" class="aligncenter" />
+                                <div class="cover-overlay">
+                                    <h3>Hedge</h3>
+                                    <p>For the last seven years, HEDGE has been the leading lifestyle magazine for the investment management industry, with its roots in the hedge fund world.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="magazine-cover" id="escapism">
+                                <img src="{{ asset('/images/escapism-cover.jpeg') }}" alt="" width="600" height="799" class="aligncenter" />
+                                <div class="cover-overlay">
+                                    <h3>Escapism</h3>
+                                    <p>Escapism is the free, monthly travel title that takes readers away from urban life and transports them around the globe; from close-to-home hideaways to far-flung tropical escapes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="magazine-cover" id="foodism">
+                                <img src="{{ asset('/images/foodism-cover.jpeg') }}" alt="" width="600" height="799" class="aligncenter" />
+                                <div class="cover-overlay">
+                                    <h3>Foodism</h3>
+                                    <p>The capital's largest food and drink mag. It's London, one bite at a time. Distributed free at Zones 1-2 Tube stations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.container -->
+    </div><!-- #content -->
+
+{% endblock %}

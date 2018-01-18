@@ -1,0 +1,85 @@
+{% extends "@App/Default/base.html.twig" %}
+{% form_theme form "@App/Default/fields.html.twig" %}
+
+{% block additionalcss %}
+    <link href="/build/global.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block body %}
+    <div id="content" class="site-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="single-image-wrapper">
+                        <div class="placeholder"><h1>CONTACT</h1></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact-body" class="row">
+                <div class="col-sm-1"></div>
+                <div id="contact" class="col-sm-5">
+                    <div class="col-sm-12" id="contact-address">
+                        <h2>Get In Touch</h2>
+
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i></p>
+                                </td>
+                                <td>
+                                    <p><a href="https://goo.gl/maps/Ge21CopCuKn" target="_blank">Square Up Media, 5 Tun Yard,<br>Peardon Street, London.<br>SW8 3HT</a></p>
+
+                                    <div class="map-box">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301.836004263682!2d-0.14511639496051482!3d51.46836807767443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487605ab9267ad2b%3A0xe15ba649d20ff714!2sSquare+Up+Media+Ltd!5e0!3m2!1sen!2suk!4v1512382701207" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i></p>
+                                </td>
+                                <td>
+                                    <p><a href="tel:+442078199999" target="_blank">+44 (0) 20 7819 9999</a></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p><i class="fa fa-envelope" aria-hidden="true"></i></p>
+                                </td>
+                                <td>
+                                    <p><a href="mailto:info@squareupgroup.com" target="_blank">info@squareupgroup.com</a></p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div id="about" class="col-sm-5">
+                    <h2>Enquiry Form</h2>
+                    <p>Send us a direct message using the form below, and member of our team will get in touch with you shortly.</p>
+
+                    <p id="msg" class=""></p>
+                    {{ form(form) }}
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+
+            <div class="row" id="bottom">
+                <div class="col-sm-1">
+                    <div class="single_image-wrapper">
+                        <img width="" height="130" src="/images/ipad-mag.png" alt="escapism ipad" class="alignleft"/>
+                    </div>
+                </div>
+                <div class="col-sm-11">
+                    <h1>THE IPAD</h1>
+                    <p>Every issue of Escapism is also available in an interactive iPad edition, with even more photography, animated articles, and a range of tools and features that bring the reader even closer to amazing locations throughout the world. Download the iPad edition here.</p>
+                </div>
+            </div>
+        </div><!-- /.container -->
+    </div><!-- #content -->
+{% endblock %}

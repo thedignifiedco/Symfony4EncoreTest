@@ -1,0 +1,119 @@
+div#site-navigation {
+    background: #000;
+}
+
+.col-sm-12 .single-image-wrapper {
+    margin: 0 -15px 0 -15px;
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(238,238,239,0.3) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 60%,rgba(238,238,239,0.3) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 60%,rgba(238,238,239,0.3) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#4deeeeef',GradientType=0 );
+}
+
+.single-image-wrapper .placeholder {
+    width: 100%;
+    height: 50vh;
+    margin: 0 0 50px;
+    background: linear-gradient(90deg, #00bcfa, #fa00bc, #000000);
+    background-size: 800% 800%;
+    -webkit-animation: PageTitle 19s ease infinite;
+    -moz-animation: PageTitle 19s ease infinite;
+    -o-animation: PageTitle 19s ease infinite;
+    animation: PageTitle 19s ease infinite;
+}
+
+.placeholder h1 {
+    top: 20vh;
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#contact-body {
+    margin-bottom: 40px;
+}
+
+#contact {
+    border-right: 1px solid #d2d2d2;
+}
+
+td {
+    vertical-align: top;
+}
+
+.divider {
+    background: #d2d2d2;
+    margin: -20px 30px 20px;
+    width: 100%;
+    height: 1px;
+    display: none;
+}
+
+.map-box {
+    border: 2px solid #000000;
+    overflow: hidden;
+    margin: 10px 0 20px;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-box iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.col-sm-4 {
+    padding-bottom: 20px;
+    border-bottom: none;
+}
+
+@-webkit-keyframes PageTitle {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+
+@-moz-keyframes PageTitle {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+
+@-o-keyframes PageTitle {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+
+@keyframes PageTitle {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+
+@media only screen and (max-width: 1023px) {
+    .single-image-wrapper .placeholder {
+        border-radius: 40% 0 40% 0;
+    }
+
+    .col-sm-4 {
+        padding-bottom: 20px;
+        border-bottom: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .divider {
+        display: block;
+    }
+
+    #contact {
+        border-right: none;
+    }
+}
