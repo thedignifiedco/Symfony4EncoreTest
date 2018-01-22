@@ -2,7 +2,7 @@ div#site-navigation {
     background: #000;
 }
 
-.col-sm-12 #about-image .single-image-wrapper {
+#about-image.col-sm-12 .single-image-wrapper {
     margin: 0 -15px 0 -15px;
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 60%, rgba(238,238,239,0.3) 100%);
     background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 60%,rgba(238,238,239,0.3) 100%);
